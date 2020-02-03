@@ -4,6 +4,7 @@ import CardList from './components/CardList/CardList';
 const SHOW_CARDS = 3;
 
 const App = () => {
+  const [start, setStart] = React.useState(false);
   const [cards, setCards] = React.useState([
     {id: 1, title: `Валет`, code: `Valet`},
     {id: 2, title: `Валет`, code: `Valet`},
@@ -31,12 +32,25 @@ const App = () => {
     setCards([...shuffledCards(cards)]);
   };
 
+  const startGame = () => {
+    setStart(true);
+    updateCards();
+  }
+
   return (
     <div className="wrapper">
       <h1>Blind Bandit</h1>
 
-      <CardList cards={getThreeCards(cards)}/>
-      <button onClick={updateCards}>Обновить!</button>
+      {start ? (
+        <React.Fragment>
+          <CardList cards={getThreeCards(cards)}/>
+          <button onClick={updateCards}>Обновить</button>
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <button onClick={startGame}>Начать игру</button>
+        </React.Fragment>
+      )}
     </div>
   );
 }

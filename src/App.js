@@ -1,5 +1,4 @@
 import React from 'react';
-import Context from './context';
 import CardList from './components/CardList/CardList';
 
 const SHOW_CARDS = 3;

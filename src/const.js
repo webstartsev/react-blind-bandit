@@ -1,0 +1,25 @@
+export const SHOW_CARDS = 3;
+
+export const INITIAL_CARD = [
+  {id: 1, title: `Валет`, code: `Valet`},
+  {id: 2, title: `Валет`, code: `Valet`},
+  {id: 3, title: `Валет`, code: `Valet`},
+  {id: 4, title: `Дама`, code: `Dama`},
+  {id: 5, title: `Дама`, code: `Dama`},
+  {id: 6, title: `Дама`, code: `Dama`},
+  {id: 7, title: `Король`, code: `Korol`},
+  {id: 8, title: `Король`, code: `Korol`},
+  {id: 9, title: `Король`, code: `Korol`},
+  {id: 10, title: `Туз`, code: `Tyz`},
+  {id: 11, title: `Туз`, code: `Tyz`},
+  {id: 12, title: `Туз`, code: `Tyz`},
+  {id: 13, title: `10`, code: `10`},
+  {id: 14, title: `10`, code: `10`},
+  {id: 15, title: `10`, code: `10`},
+  {id: 16, title: `9`, code: `9`},
+  {id: 17, title: `9`, code: `9`},
+  {id: 18, title: `9`, code: `9`},
+  {id: 19, title: `8`, code: `8`},
+  {id: 20, title: `8`, code: `8`},
+  {id: 21, title: `8`, code: `8`},
+];
